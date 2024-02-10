@@ -23,15 +23,15 @@ def take_command():
             voice = listener.listen(source)
             command = listener.recognize_google(voice)
             command = command.lower()
-            if 'alexa' in command:
-                command = command.replace('alexa', '')
+            if 'socrates' in command:
+                command = command.replace('socrates', '')
                 print(command)
     except:
         pass
     return command
 
 
-def run_alexa():
+def run_socrates():
     command = take_command()
     print(command)
     if 'play' in command:
@@ -57,4 +57,4 @@ def run_alexa():
 
 
 while True:
-    run_alexa()
+    run_socrates()
