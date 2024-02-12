@@ -131,23 +131,23 @@ if __name__ == '__main__':
             speak("Here you go to Google\n")
             webbrowser.open("google.com")
 
-        elif 'open stackoverflow' in query:
+        elif 'stackoverflow' in query:
             speak("Here you go to Stack Over flow.Happy coding")
             webbrowser.open("stackoverflow.com")
 
         elif 'play music' in query or "play song" in query:
             speak("Here you go with music")
             # music_dir = "G:\\Song"
-            music_dir = "C:\\Users\\GAURAV\\Music"
+            music_dir = "C:\\Users\\user\\Desktop\\Holy\\holy-music"
             songs = os.listdir(music_dir)
             print(songs)
             random = os.startfile(os.path.join(music_dir, songs[1]))
 
-        elif 'the time' in query:
+        elif 'time' in query:
             strTime = datetime.datetime.now().strftime("% H:% M:% S")
             speak(f"Sir, the time is {strTime}")
 
-        elif 'open opera' in query:
+        elif 'opera' in query:
             codePath = r"C:\\Users\\GAURAV\\AppData\\Local\\Programs\\Opera\\launcher.exe"
             os.startfile(codePath)
 
@@ -200,7 +200,7 @@ if __name__ == '__main__':
             exit()
 
         elif "who made you" in query or "who created you" in query:
-            speak("I have been created by Gaurav.")
+            speak("I have been created by Prince.")
 
         elif 'joke' in query:
             speak(pyjokes.get_joke())
@@ -222,11 +222,11 @@ if __name__ == '__main__':
             query = query.replace("play", "")
             webbrowser.open(query)
 
-        elif "who i am" in query:
+        elif "what am I" in query:
             speak("If you talk then definitely your human.")
 
         elif "why you came to world" in query:
-            speak("Thanks to Gaurav. further It's a secret")
+            speak("Thanks to Prince, I am alive. Further it's a secret")
 
         elif 'power point presentation' in query:
             speak("opening Power Point presentation")
@@ -234,13 +234,13 @@ if __name__ == '__main__':
             os.startfile(power)
 
         elif 'is love' in query:
-            speak("It is 7th sense that destroy all other senses")
+            speak("It is a 7th sense that destroys all the other senses")
 
         elif "who are you" in query:
-            speak("I am your virtual assistant created by Gaurav")
+            speak("I am an AI that will help students and users navigate the e-learning platform with just their in the future, created by Prince")
 
         elif 'reason for you' in query:
-            speak("I was created as a Minor project by Mister Gaurav ")
+            speak("I was created as a Minor project by Mister Prince, to help users navigate his website ")
 
         elif 'change background' in query:
             ctypes.windll.user32.SystemParametersInfoW(20,
@@ -257,12 +257,12 @@ if __name__ == '__main__':
 
             try:
                 jsonObj = urlopen(
-                    '''https://newsapi.org / v1 / articles?source = the-times-of-india&sortBy = top&apiKey =\\times of India Api key\\''')
+                    '''https://newsapi.org / v1 / articles?source = the-times-of-rwanda&sortBy = top&apiKey =\\times of Rwanda Api key\\''')
                 data = json.load(jsonObj)
                 i = 1
 
-                speak('here are some top news from the times of india')
-                print('''=============== TIMES OF INDIA ============''' + '\n')
+                speak('here are some top news from the times of Rwanda')
+                print('''=============== TIMES OF RWANDA ============''' + '\n')
 
                 for item in data['articles']:
                     print(str(i) + '. ' + item['title'] + '\n')
@@ -287,7 +287,7 @@ if __name__ == '__main__':
             speak("Recycle Bin Recycled")
 
         elif "don't listen" in query or "stop listening" in query:
-            speak("for how much time you want to stop jarvis from listening commands")
+            speak("for how much time you want to stop Mom from listening")
             a = int(takeCommand())
             time.sleep(a)
             print(a)
@@ -300,7 +300,7 @@ if __name__ == '__main__':
             webbrowser.open("https://www.google.nl / maps / place/" + location + "")
 
         elif "camera" in query or "take a photo" in query:
-            ec.capture(0, "Jarvis Camera ", "img.jpg")
+            ec.capture(0, "Mom Camera ", "img.jpg")
 
         elif "restart" in query:
             subprocess.call(["shutdown", "/r"])
@@ -317,7 +317,7 @@ if __name__ == '__main__':
         elif "write a note" in query:
             speak("What should i write, sir")
             note = takeCommand()
-            file = open('jarvis.txt', 'w')
+            file = open('mom.txt', 'w')
             speak("Sir, Should i include date and time")
             snfm = takeCommand()
             if 'yes' in snfm or 'sure' in snfm:
@@ -330,7 +330,7 @@ if __name__ == '__main__':
 
         elif "show note" in query:
             speak("Showing Notes")
-            file = open("jarvis.txt", "r")
+            file = open("mom.txt", "r")
             print(file.read())
             speak(file.read(6))
 
@@ -349,10 +349,10 @@ if __name__ == '__main__':
                         Pypdf.write(ch)
 
         # NPPR9-FWDCX-D2C8J-H872K-2YT43
-        elif "jarvis" in query:
+        elif "mom" in query:
 
             wishMe()
-            speak("Jarvis 1 point o in your service Mister")
+            speak("Mom in your service Mister")
             speak(assname)
 
         elif "weather" in query:
@@ -414,7 +414,7 @@ if __name__ == '__main__':
             speak("I'm fine, glad you me that")
 
         elif "i love you" in query:
-            speak("It's hard to understand")
+            speak("I love you too")
 
         elif "what is" in query or "who is" in query:
 
