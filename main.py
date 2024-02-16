@@ -2,7 +2,7 @@ from readPdf import readPdf
 from speechToText import speechToText
 from translatePdf import translatePdf
 from translation import translateText
-from voiceAssistant import assistant
+# from voiceAssistant import assistant
 from tkinter.filedialog import *
 
 while True:
